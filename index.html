@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-black text-white grid grid-rows-[65px_1fr_0px] font-[Montserrat] h-screen lg:grid-rows-[65px_1fr_80px]">
+  <nav class="flex justify-between p-[8px]">
+    <div class="flex">
+      <div class="flex items-start justify-center mx-[15px]">
+        <img class="w-16 h-16" src="./SVG/logospotify1.svg" title="Spotify">
+      </div>
+      <div class="flex items-center bg-neutral-800 rounded-full p-[12px] mx-[8px] hover:scale-105 transition duration-300 cursor-pointer">
+        <img class="w-8 h-8" src="./SVG/home.svg" title="Home">
+      </div>
+      <div class="flex items-center bg-neutral-800 rounded-full text-white w-full px-[16px] hover:bg-neutral-700 transition duration-800">
+        <img class="w-7 h-7 cursor-pointer" src="./SVG/search.svg" title="Search">
+        <input type="text" placeholder="What do you want to play?" class="w-full pr-[96px] pl-[48px] py-[12px]">
+        <div class="w-[1px] h-[20px] my-0 mx-[8px] bg-[#7C7C7C]"></div>
+        <img class="w-7 h-7 hover:scale-105 transition duration-300 cursor-pointer" src="./SVG/folder.svg" title="Browse"> 
+      </div>
+    </div>
+    <div class="flex items-center">
+      <div class="flex">
+        <button class="text-[#B3B3B3] font-semibold p-[8px] hover:scale-105 hover:text-white transition duration-300 cursor-pointer">
+          Premium
+        </button>
+        <button class="text-[#B3B3B3] font-semibold p-[8px] hover:scale-105 hover:text-white transition duration-300 cursor-pointer">
+          Support
+        </button>
+        <button class="text-[#B3B3B3] font-semibold p-[8px] hover:scale-105 hover:text-white transition duration-300 cursor-pointer">
+          Download
+        </button>
+        <div class="flex mt-[10px] w-[1px] h-[20px] my-0 mx-[20px] bg-[#7C7C7C]"></div>
+        <button class="flex items-center justify-center text-[#B3B3B3] font-semibold p-[8px] hover:scale-105 hover:text-white transition duration-300 cursor-pointer">
+          <img class="w-4 h-4" src="./SVG/install.svg">
+          <p class="ml-[8px]">Install App</p>
+        </button>
+        <button class="text-[#B3B3B3] font-semibold p-[8px] hover:scale-105 hover:text-white transition duration-300 cursor-pointer">
+          Sign Up
+        </button>
+        <button class="text-black font-semibold rounded-full bg-white px-[32px] py-[12px] hover:scale-105 hover:bg-gray-200 transition duration-300 cursor-pointer">
+          Log in
+        </button>
+      </div>
+    </div>
+  </nav>
+  <main class="overflow-y-auto">
+    <aside>
+      <div>
+        <h1>
+          Your Library
+        </h1>
+        <img src="./SVG/plus.svg" title="Create playlist or folder">
+      </div>
+      <div>
+        <div>
+          <h2>
+            Create your first playlist
+          </h2>
+          <p>
+            It's easy, we'll help you
+          </p>
+          <button>
+            Create playlist
+          </button>
+        </div>
+        <div>
+          <h2>
+            Let's find some podcasts to follow
+          </h2>
+          <p>
+            We'll keep you updated on new episodes
+          </p>
+          <button>
+            Browse podcasts
+          </button>
+        </div>
+      </div>
+      <div>
+        <div>
+          <p>Legal</p>
+          <p>Safety & Privacy Center</p>
+          <p>Privacy Policy</p>
+          <p>Cookies</p>
+          <p>About Ads</p>
+          <p>Accessibility</p>
+          <p>Notice at Collection</p>
+          <div>
+            <p>
+              Your Privacy Choices
+            </p>
+            <img src="./SVG/privacy.svg" title="California Consumer Privacy Act (CCPA) Opt-Out Icon">
+          </div>
+          <p>
+            Cookies
+          </p>
+        </div>
+        <div>
+          <button>
+            <img src="./SVG/world.svg">
+            <p>English</p>
+          </button>
+        </div>
+      </div>
+    </aside>
+    <div>
+      <section>
+        <div>
+          <h2>
+            Trending Songs
+          </h2>
+          <p>
+            Show all
+          </p>
+        </div>
+        <div>
+          <div>
+            <div>
+              <img src="https://i.scdn.co/image/ab67616d00001e0278cba6a1edfe4235def632ed">
+              <button>
+                <img src="./SVG/play.svg">
+              </button>
+            </div>
+            <h3>City Walls</h3>
+            <p>Twenty One Pilots</p>
+          </div>
+          <div>
+            <div>
+              <img src="https://i.scdn.co/image/ab67616d00001e0233a7966fa1f664e6657fdc5f">
+              <button>
+                <img src="./SVG/play.svg">
+              </button>
+            </div>
+            <h3>Camera</h3>
+            <p>Ed Sheeran</p>
+          </div>
+          <div>
+            <div>
+              <img src="https://i.scdn.co/image/ab67616d00001e029c2ab979bbe25f3d9e21f698" alt="Carátula del álbum">
+              <button>
+                <img src="./SVG/play.svg">
+              </button>
+            </div>
+            <h3>DOG HOUSE (feat. Julia Wolf & Yeat)</h3>
+            <p>Drake, Julia Wolf, Yeat</p>
+          </div>
+          <div>
+            <div>
+              <img src="https://i.scdn.co/image/ab67616d00001e02116f4de21acf6c25910fda92">
+              <button>
+                <img src="./SVG/play.svg">
+              </button>
+            </div>
+            <h3>Making Love To Morgan Wallen</h3>
+            <p>Limp Bizkit</p>
+          </div>
+          <div>
+            <div>
+              <img src="https://i.scdn.co/image/ab67616d00001e0294fb47698a5dd6f6f7509578">
+              <button>
+                <img src="./SVG/play.svg">
+              </button>
+            </div>
+            <h3>The Happy Dictator (feat. Sparks)</h3>
+            <p>Gorillaz, Sparks</p>
+          </div>
+          <div>
+            <div>
+              <img src="https://i.scdn.co/image/ab67616d00001e02452dceb1878dbde2fa433c73">
+              <button>
+                <img src="./SVG/play.svg">
+              </button>
+            </div>
+            <h3>Cristallized (feat. Inéz)</h3>
+            <p>John Summit, Inéz</p>
+          </div>
+          <div>
+            <div>
+              <img src="https://i.scdn.co/image/ab67616d00001e0297605dc2f2c85644e3863185">
+              <button>
+                <img src="./SVG/play.svg">
+              </button>
+            </div>
+            <h3>GuabanSexxx</h3>
+            <p>Rauw Alejandro</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div>
+            Popular Artist
+          </div>
+          <div>
+            Show all
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>
+              <img src="https://i.scdn.co/image/ab6761610000517439ba6dcd4355c03de0b50918">
+              <button>
+                <img src="./SVG/play.svg">
+              </button>
+            </div>
+            <h3>Kendrick Lamar</h3>
+            <p>Artist</p>
+          </div>
+          <div>
+            <div>
+              <img src="https://i.scdn.co/image/ab676161000051744293385d324db8558179afd9">
+              <button>
+                <img src="./SVG/play.svg">
+              </button>
+            </div>
+            <h3>Drake</h3>
+            <p>Artist</p>
+          </div>
+          <div>
+            <div>
+              <img src="https://i.scdn.co/image/ab676161000051749e528993a2820267b97f6aae">
+              <button>
+                <img src="./SVG/play.svg">
+              </button>
+            </div>
+            <h3>The Weeknd</h3>
+            <p>Artist</p>
+          </div>
+          <div>
+            <div>
+              <img src="https://i.scdn.co/image/ab676161000051744245b1652fcc23f2b76ccd07">
+              <button>
+                <img src="./SVG/play.svg">
+              </button>
+            </div>
+            <h3>Morgan Wallen</h3>
+            <p>Artist</p>
+          </div>
+          <div>
+            <div>
+              <img src="https://i.scdn.co/image/ab67616100005174e17c0aa1714a03d62b5ce4e0">
+              <button>
+                <img src="./SVG/play.svg">
+              </button>
+            </div>
+            <h3>Post Malone</h3>
+            <p>Artist</p>
+          </div>
+          <div>
+            <div>
+              <img src="https://i.scdn.co/image/ab67616100005174cb565a8e684e3be458d329ac">
+              <button>
+                <img src="./SVG/play.svg">
+              </button>
+            </div>
+            <h3>Rihanna</h3>
+            <p>Artist</p>
+          </div>
+          <div>
+            <div>
+              <img src="https://i.scdn.co/image/ab67616100005174aadc18cac8d48124357c38e6">
+              <button>
+                <img src="./SVG/play.svg">
+              </button>
+            </div>
+            <h3>Lady Gaga</h3>
+            <p>Artist</p>
+          </div>
+        </div>
+      </section>
+      <div class="w-[100vh] h-[1px] my-[10px] mx-[0px] bg-[#7C7C7C]"></div>
+      <div>
+        <div>
+          <div>
+            <h3>
+              Company
+            </h3>
+            <p>
+              About
+            </p>
+            <p>
+              Jobs
+            </p>
+            <p>
+              For the Record
+            </p>
+          </div>
+          <div>
+            <h3>
+              Communities
+            </h3>
+            <p>
+              For Artist
+            </p>
+            <p>
+              Developers
+            </p>
+            <p>
+              Advertising
+            </p>
+            <p>
+              Investors
+            </p>
+            <p>
+              Vendors
+            </p>
+          </div>
+          <div>
+            <h3>
+              Useful links
+            </h3>
+            <p>
+              Support
+            </p>
+            <p>
+              Free Mobile App
+            </p>
+            <p>
+              Popular by Country
+            </p>
+            <p>
+              Import your music
+            </p>
+          </div>
+          <div>
+            <h3>
+              Spotify Plans
+            </h3>
+            <p>
+              Premium Individual
+            </p>
+            <p>
+              Premium Duo
+            </p>
+            <p>
+              Premium Family
+            </p>
+            <p>
+              Premium Student
+            </p>
+            <p>
+              Spotify Free
+            </p>
+            <p>
+              Audiobooks Access
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="./SVG/instagram.svg">
+          <img src="./SVG/twitter.svg">
+          <img src="./SVG/facebook.svg">
+        </div>
+        <div>
+          © 2025 Spotify AB
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="hidden lg:flex">
+    <div>
+      <h5>
+        Preview of Spotify
+      </h5>
+      <p>
+        Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed. 
+      </p>
+    </div>
+    <div>
+      <button>
+        Sign up free
+      </button>
+    </div>
+  </footer>
+</body>
+</html>
