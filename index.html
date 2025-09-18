@@ -54,40 +54,42 @@
       </div>
     </div>
   </nav>
-  <main class="overflow-y-auto m-[10px] mb-[0px]">
-    <aside class="hidden">
-      <div>
-        <h1>
+  <main class="lg:grid grid-cols-[25%_1fr] overflow-y-auto m-[10px] mb-[0px]">
+    <aside class="hidden lg:flex flex-col gap-y-[60px] bg-[#121212] rounded-[1vw] pt-[8px] px-[8px] mr-[12px]">
+      <div class="flex justify-between items-center p-[10px]">
+        <h1 class="text-white font-semibold text-l">
           Your Library
         </h1>
-        <img src="./SVG/plus.svg" title="Create playlist or folder">
+        <img class="w-4 h-4" src="./SVG/plus.svg" title="Create playlist or folder">
       </div>
-      <div>
-        <div>
-          <h2>
+      <div class="flex flex-col gap-y-[25px]">
+        <div class="flex flex-col items-start gap-y-[10px] p-[20px] bg-[#1F1F1F] rounded-xl">
+          <h2 class="text-white font-bold text-l">
             Create your first playlist
           </h2>
-          <p>
+          <p class="text-white font-semibold text-sm">
             It's easy, we'll help you
           </p>
-          <button>
+          <button class="text-black font-semibold text-sm rounded-full bg-white px-[15px] py-[8px] hover:scale-105 hover:bg-gray-200 transition duration-300 cursor-pointer 
+          whitespace-nowrap">
             Create playlist
           </button>
         </div>
-        <div>
-          <h2>
+        <div class="flex flex-col items-start gap-y-[10px] p-[20px] bg-[#1F1F1F] rounded-xl">
+          <h2 class="text-white font-bold text-l">
             Let's find some podcasts to follow
           </h2>
-          <p>
+          <p class="text-white font-semibold text-sm">
             We'll keep you updated on new episodes
           </p>
-          <button>
+          <button class="text-black font-semibold text-sm rounded-full bg-white px-[15px] py-[8px] hover:scale-105 hover:bg-gray-200 transition duration-300 cursor-pointer 
+        whitespace-nowrap">
             Browse podcasts
           </button>
         </div>
       </div>
-      <div>
-        <div>
+      <div class="mt-auto">
+        <div class="flex gap-[15px] text-[#B3B3B3] text-xs flex-wrap p-[15px] cursor-pointer">
           <p>Legal</p>
           <p>Safety & Privacy Center</p>
           <p>Privacy Policy</p>
@@ -95,26 +97,26 @@
           <p>About Ads</p>
           <p>Accessibility</p>
           <p>Notice at Collection</p>
-          <div>
-            <p>
+          <div class="flex">
+            <p class="bg-[#468254] rounded-full hover:bg-inherit">
               Your Privacy Choices
             </p>
             <img src="./SVG/privacy.svg" title="California Consumer Privacy Act (CCPA) Opt-Out Icon">
           </div>
-          <p>
+          <p class="text-white hover:underline decoration-1">
             Cookies
           </p>
         </div>
-        <div>
-          <button>
-            <img src="./SVG/world.svg">
+        <div class="p-[15px]">
+          <button class="flex gap-[10px] items-center border rounded-full border-[#E5E7EB] px-[10px] py-[5px] cursor-pointer hover:scale-105">
+            <img class="w-5 h-5" src="./SVG/world.svg">
             <p>English</p>
           </button>
         </div>
       </div>
     </aside>
-    <div class="flex flex-col gap-y-[60px] bg-[#121212] rounded-[1vw] pt-[10px] px-[40px]">
-      <section class="overflow-hidden">
+    <div class="flex flex-col gap-y-[60px] bg-[#121212] rounded-[1vw] pt-[10px] px-[40px] overflow-x-hidden">
+      <section>
         <div class="flex justify-between pt-[18px] pb-[20px]">
           <h2 class="font-bold cursor-pointer text-xl hover:underline decoration-2">
             Trending Songs
@@ -196,7 +198,7 @@
           </div>
         </div>
       </section>
-      <section class="overflow-hidden">
+      <section>
         <div class="flex justify-between pt-[18px] pb-[20px]">
           <h2 class="font-bold cursor-pointer text-xl hover:underline decoration-2">
             Popular Artist
@@ -278,9 +280,9 @@
           </div>
         </div>
       </section>
-      <div class="w-full h-[1px] my-[30px] bg-[#7C7C7C]"></div>
       <div>
-        <div class="grid grid-cols-2 gap-x-[30px] gap-y-[30px] justify-between lg:flex">
+        <div class="w-full h-[1px] my-[60px] bg-[#292929]"></div>
+        <div class="grid grid-cols-2 gap-y-[30px] gap-x-[20px] justify-between lg:flex">
           <div class="flex flex-col gap-y-[4px]">
             <h3 class="font-semibold text-lg cursor-default">
               Company
@@ -361,7 +363,7 @@
             <img class="w-12 h-12 rounded-full bg-neutral-800 p-[8px] cursor-pointer" src="./SVG/facebook.svg">
           </div>
         </div>
-        <div class="w-full h-[1px] my-[30px] bg-[#7C7C7C]"></div>
+        <div class="w-full h-[1px] my-[60px] bg-[#292929]"></div>
         <div class="text-[#B3B3B3] font-medium mb-[40px]">
           © 2025 Spotify AB
         </div>
